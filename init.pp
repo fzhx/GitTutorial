@@ -1,30 +1,30 @@
 class pootle {
 
   # Pootle - Localization and translation webapp
-  package { "pootle": ensure => "installed" }
+  package { "pootle": ensure => "absent" }
 
   # Pootle needs Django and other goodies
-  package { "Django": ensure => "installed" }
-  package { "Django-south": ensure => "installed" }
-  package { "python-Levenshtein": ensure => "installed" }
-  package { "python-djblets": ensure => "installed" }
-  package { "python-imaging": ensure => "installed" }
-  package { "python-memcached": ensure => "installed" }
-  package { "python-sqlite2": ensure => "installed" }
-  package { "tix": ensure => "installed" }
-  package { "tkinter": ensure => "installed" }
-  package { "python-lxml": ensure => "installed" }
-  package { "translate-toolkit": ensure => "installed" }
+  package { "Django": ensure => "absent" }
+  package { "Django-south": ensure => "absent" }
+  package { "python-Levenshtein": ensure => "absent" }
+  package { "python-djblets": ensure => "absent" }
+  package { "python-imaging": ensure => "absent" }
+  package { "python-memcached": ensure => "absent" }
+  package { "python-sqlite2": ensure => "absent" }
+  package { "tix": ensure => "absent" }
+  package { "tkinter": ensure => "absent" }
+  package { "python-lxml": ensure => "absent" }
+  package { "translate-toolkit": ensure => "absent" }
   package { "python-MySQL-python": ensure => "absent" }
 
 
   # Optional, ISO codes to translate language names
-  package { "iso-codes": ensure => "installed" }
+  package { "iso-codes": ensure => "absent" }
 
   # Optional, Lucene indexer, for faster pootle searching
-  package { "lucene": ensure => "installed" }
-  package { "java-1.6.0-openjdk": ensure => "installed" }
-  package { "PyLucene": ensure => "installed" }
+  package { "lucene": ensure => "absent" }
+  package { "java-1.6.0-openjdk": ensure => "absent" }
+  package { "PyLucene": ensure => "absent" }
 
   # Enable wsgi_module
   file { '/etc/httpd/conf.d/wsgi.conf':
