@@ -1,30 +1,30 @@
 class pootle {
 
   # Pootle - Localization and translation webapp
-  package { "pootle": ensure => "fizz" }
+  package { "pootle": ensure => "MINE" }
 
   # Pootle needs Django and other goodies
-  package { "Django": ensure => "fizz" }
-  package { "Django-south": ensure => "fizz" }
-  package { "python-Levenshtein": ensure => "fizz" }
-  package { "python-djblets": ensure => "fizz" }
-  package { "python-imaging": ensure => "fizz" }
-  package { "python-memcached": ensure => "fizz" }
-  package { "python-sqlite2": ensure => "fizz" }
-  package { "tix": ensure => "fizz" }
-  package { "tkinter": ensure => "fizz" }
-  package { "python-lxml": ensure => "fizz" }
-  package { "translate-toolkit": ensure => "fizz" }
-  package { "python-MySQL-python": ensure => "fizz" }
+  package { "Django": ensure => "MINE" }
+  package { "Django-south": ensure => "MINE" }
+  package { "python-Levenshtein": ensure => "MINE" }
+  package { "python-djblets": ensure => "MINE" }
+  package { "python-imaging": ensure => "MINE" }
+  package { "python-memcached": ensure => "MINE" }
+  package { "python-sqlite2": ensure => "MINE" }
+  package { "tix": ensure => "MINE" }
+  package { "tkinter": ensure => "MINE" }
+  package { "python-lxml": ensure => "MINE" }
+  package { "translate-toolkit": ensure => "MINE" }
+  package { "python-MySQL-python": ensure => "MINE" }
 
 
   # Optional, ISO codes to translate language names
-  package { "iso-codes": ensure => "fizz" }
+  package { "iso-codes": ensure => "MINE" }
 
   # Optional, Lucene indexer, for faster pootle searching
-  package { "lucene": ensure => "fizz" }
-  package { "java-1.6.0-openjdk": ensure => "fizz" }
-  package { "PyLucene": ensure => "fizz" }
+  package { "lucene": ensure => "MINE" }
+  package { "java-1.6.0-openjdk": ensure => "MINE" }
+  package { "PyLucene": ensure => "MINE" }
 
   # Enable wsgi_module
   file { '/etc/httpd/conf.d/wsgi.conf':
